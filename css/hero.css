@@ -1,0 +1,156 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    background-color: var(--color-background-main); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    padding-top: 100px; 
+    padding-bottom: var(--spacing-xl);
+}
+
+.hero-content-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start; 
+    padding: 0 var(--spacing-lg); 
+    position: relative;
+    z-index: 10; 
+}
+
+.hero-left-nav {
+    flex-basis: 200px; 
+    min-width: 200px;
+    margin-top: 150px; 
+}
+
+.hero-left-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.hero-left-nav a {
+    color: var(--color-primary);
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease;
+}
+
+.hero-left-nav a.active {
+    background-color: var(--color-light);
+    color: var(--color-primary); 
+}
+
+.hero-left-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+
+.hero-main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-xl);
+    padding-left: var(--spacing-xl); 
+}
+
+.hero-image-card {
+    position: relative;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    width: 350px; 
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(-10deg); 
+    margin-left: -50px; 
+    margin-top: 50px; 
+}
+
+.hero-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(10deg) scale(1.2); 
+}
+
+.hero-image-card .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.hero-image-card .play-button img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%); 
+    transform: none; 
+}
+
+.hero-text-content {
+    flex-basis: 50%; 
+    max-width: 500px;
+    text-align: right;
+    margin-left: auto;
+    padding-top: 50px; 
+}
+
+.hero-description {
+    color: var(--color-primary);
+    font-size: var(--font-size-body);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-title {
+    font-family: var(--font-accent);
+    font-size: 4.5rem; 
+    line-height: 1.1;
+    color: var(--color-primary);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title .highlight {
+    color: var(--color-primary); 
+    position: relative;
+    padding-bottom: 5px; 
+    display: inline-block;
+}
+
+.hero-title .highlight::before {
+    content: '';
+    position: absolute;
+    left: -40px; 
+    bottom: 0px; 
+    width: 30px; 
+    height: 20px; 
+    background-image: url('path/to/your/arrow-icon.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    filter: invert(100%); 
+}

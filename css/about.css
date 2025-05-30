@@ -1,0 +1,11 @@
+.about {
+    width: 100%;
+    min-height: 100vh; 
+    background-color: var(--color-light); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    padding-top: 100px; 
+    padding-bottom: var(--spacing-xl);
+}

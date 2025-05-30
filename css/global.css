@@ -1,0 +1,62 @@
+:root {
+  /* Color Palette */
+  --color-primary: #02335B;      /* Warna utama */
+  --color-secondary: #ff8a5c;    /* Warna aksen */
+  --color-background-main: #f8f2df;   /* Latar belakang utama */
+  --color-light: #ffffff;        /* Warna terang untuk teks */
+
+  /* Typography */
+  --font-main: 'Poppins', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+
+  /* Font Sizes */
+  --font-size-heading: 2.5rem;
+  --font-size-subheading: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Shadow */
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-body);
+  background-color: var(--color-background-main);
+  color: var(--color-light);
+  line-height: 1.5;
+}
+
+/* Elemen global */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-accent);
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
