@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/hero.css">
     <link rel="stylesheet" href="css/about.css">
-
-    <!-- javascript -->
-    <script src="javascript/nav.js"></script>
+    <link rel="stylesheet" href="css/animateOnScroll.css">
 </head>
 <body>
     <!-- navbar -->
@@ -21,12 +19,6 @@
             <a href="#" class="navbar-logo">
                 <img src="img/logo.png" alt="Sedulur">
             </a>
-
-            <button class="navbar-toggler" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
 
             <nav class="navbar-nav-desktop">
                 <ul>
@@ -41,37 +33,131 @@
                 <a href="#" class="cart-icon" aria-label="Shopping Cart">
                     <img src="img/Icon/icons8-shopping-cart-48.png" alt="Cart">
                 </a>
+                <button class="navbar-toggler" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
+
+            <nav class="navbar-nav-mobile">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
         <!-- hero -->
         <section class="hero">
-            <div class="hero-bg"></div> <div class="hero-content-wrapper">
-                <!-- hero navbar -->
-                <div class="hero-left-nav">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
+            <div class="hero-content-wrapper">
+                <div class="hero-social-container">
+                    <div class="hero-social" data-aos="fade-up" data-aos-delay="500">
+                        <ul>
+                            <li><a href="#"><img src="./img/Icon/icons8-facebook-48.png" alt="Facebook" /></a></li>
+                            <li><a href="#"><img src="./img/Icon/instagram.png" alt="Instagram" /></a></li>
+                            <li><a href="#"><img src="./img/Icon/icons8-x-48.png" alt="Twitter" /></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="hero-main-content">
-                    <div class="hero-image-card">
-                        <img src="path/to/your/prosthetic-leg-image.png" alt="Prosthetic Leg with Flowers">
-                        <div class="play-button">
-                            <img src="path/to/your/play-icon.svg" alt="Play Icon">
+                <div class="hero-left">
+                    <div class="hero-text" data-aos="fade-right" data-aos-delay="100">
+                        <div class="hero-title">
+                            <h1>Angkat UMKM Sumsel</h1>
+                        </div>
+                        <div class="hero-desc">
+                            <p>Rasakan budaya Sumsel. Dukung UMKM, wujudkan ekonomi kreatif bersama!</p>
                         </div>
                     </div>
-                    <div class="hero-text-content">
-                        <p class="hero-description">Physical disabilities, mobility disabilities and injuries are not limitations. We're here with your steps so that you can control your feelings in your feet and walk easily!</p>
-                        <h1 class="hero-title">WE MAKE YOUR STEPS <span class="highlight">STRONGER.</span></h1>
+                    <div class="hero-stat" data-aos="fade-right" data-aos-delay="500">
+                        <div class="stat-row">
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">UMKM Bergabung</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2K</div>
+                                <div class="stat-label">Produk Terjual</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1K</div>
+                                <div class="stat-label">Pengguna Terdaftar</div>
+                            </div>
+                        </div>
+                        <div class="buyers-row">
+                            <div class="avatars">
+                                <img src="img/collageHero/miecelor.jpg" alt="Avatar 1" class="avatar">
+                                <img src="img/collageHero/pempekPanggang.webp" alt="Avatar 2" class="avatar">
+                                <img src="img/collageHero/malbi.webp" alt="Avatar 3" class="avatar">
+                            </div>
+                            <div class="buyers-count">200+ Total Pembeli</div>
+                        </div>
                     </div>
                 </div>
+                <div class="hero-main-content">
+                    <div class="aboutTitle-container" data-aos="fade-up" data-aos-delay="500">
+                        <h1 class="about-title">Karya Sumsel</h1>
+                    </div>
+                    <div class="carousel-container" data-aos="fade-up" data-aos-delay="300">
+                        <div class="carousel-track">
+                            <div class="card" data-index="0" role="group" aria-label="Ikon Sumsel" tabindex="0">
+                                <img src="./img/collageHero/jembatanAmpera.jpg" alt="Jembatan Ampera" loading="lazy" />
+                            </div>
+                            <div class="card" data-index="1" role="group" aria-label="Makanan" tabindex="0">
+                                <img src="./img/pempek.jpg" alt="Pempek" loading="lazy" />
+                            </div>
+                            <div class="card" data-index="2" role="group" aria-label="Pakaian" tabindex="0">
+                                <img src="./img/collageHero/songketPlg.jpg" alt="Songket Palembang" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="featuring">
+                        <ul class="fiturUnggulan">
+                            <li class="fitur-itemContainer" data-aos="fade-left" data-aos-delay="100">
+                                <div class="fitur-item">
+                                    <div class="item-fiturList">
+                                        <h1>Ajukan Produk UMKM</h1>
+                                        <p>Pelaku UMKM lokal dapat mendaftarkan produk mereka dengan mudah.</p>
+                                    </div>
+                                    <div class="fitur-btn">
+                                        <a href=""> > </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fitur-itemContainer" data-aos="fade-left" data-aos-delay="300">
+                                <div class="fitur-item">
+                                    <div class="item-fiturList">
+                                        <h1>Jelajahi Katalog</h1>
+                                        <p>Jelajahi beragam produk khas dari Sumatera Selatan.</p>
+                                    </div>
+                                    <div class="fitur-btn">
+                                        <a href=""> > </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fitur-itemContainer" data-aos="fade-left" data-aos-delay="500">
+                                <div class="fitur-item">  
+                                    <div class="item-fiturList">
+                                        <h1>Review & Rating</h1>
+                                        <p>Tingkatkan kepercayaan melalui ulasan dan penilaian pembeli.</p>
+                                    </div>
+                                    <div class="fitur-btn">
+                                        <a href=""> > </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
             </div>
-        </section> 
+        </section>
         
         <!-- about -->
         <section class="about">
@@ -82,6 +168,11 @@
 
         <!-- contact -->
     </main>
-       
+    
+    <!-- javascript -->
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/heroCardSlider.js"></script>
+    <script src="javascript/animateOnScroll.js"></script>
 </body>
+
 </html>

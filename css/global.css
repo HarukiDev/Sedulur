@@ -1,7 +1,7 @@
 :root {
   /* Color Palette */
   --color-primary: #02335B;      /* Warna utama */
-  --color-secondary: #ff8a5c;    /* Warna aksen */
+  --color-secondary: #f3f498;    /* Warna aksen */
   --color-background-main: #f8f2df;   /* Latar belakang utama */
   --color-light: #ffffff;        /* Warna terang untuk teks */
 
@@ -36,13 +36,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-main);
   font-size: var(--font-size-body);
   background-color: var(--color-background-main);
-  color: var(--color-light);
+  color: var(--color-primary);
   line-height: 1.5;
 }
 
@@ -55,8 +56,4 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: var(--color-secondary);
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
