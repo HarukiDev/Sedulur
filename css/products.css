@@ -1,0 +1,11 @@
+.products {
+    width: 100%;
+    min-height: 100vh; 
+    background-color: #e5724b;; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    padding-top: 100px; 
+    padding-bottom: var(--spacing-xl);
+}
