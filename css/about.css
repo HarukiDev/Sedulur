@@ -1,312 +1,230 @@
 .about {
     width: 100%;
-    min-height: 100vh;
-    background-color: var(--color-light);
+    min-height: 100vh; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding-top: 100px;
-    padding-bottom: var(--spacing-xl);
+    padding: 70px 0px 0px;
+    align-items: self-start;
+    overflow: hidden; 
 }
 
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+}
+
+.about-contentContainer {
     width: 100%;
-    max-width: 1800px; /* Max width for very large screens */
-    position: relative;
-    height: 100%;
+    background-color: #fcedbe;
 }
 
 .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* Hapus max-width: 600px; dari sini secara global */
-    /* width: 100%; agar bisa meluas sesuai parent */
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 10px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.aboutSedulur {
-    max-width: 600px; /* Max width default untuk box filosofi */
-    text-align: center;
-    z-index: 2;
-    padding: 10px 15px;
-    border: 1px solid var(--color-primary);
-    border-radius: 15px;
-    margin: 0 auto; /* Pusatkan secara horizontal */
+.about-left {
+  width: 40%;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 12px;
 }
 
-.why-us-section {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 600px; /* Max width default untuk keseluruhan section Why Us */
-    width: 100%; /* Agar bisa mengisi hingga max-width */
-}
-
-.why-us-title {
-    margin-bottom: var(--spacing-lg);
-}
-
-.why-us-title h1 {
-    font-size: 1.5em;
-    color: var(--color-primary);
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 320px; /* Batasi lebar judul jika terlalu panjang */
-}
-
-.why-us-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: var(--spacing-lg);
-    margin-bottom: 20px;
-    max-width: 100%; /* Pastikan tidak melebihi parentnya */
-    justify-content: center;
-}
-
-.why-us-box h4 {
-    height: 48px; /* Jaga tinggi judul agar rata */
-    margin-bottom: var(--spacing-sm); /* Tambah jarak bawah judul */
-}
-
-.why-us-grid .why-us-box:last-child {
-    grid-column: 1 / -1; 
-    justify-self: center; 
-    
-    max-width: calc(2 * 180px + var(--spacing-lg));
-
-    text-align: center;
-    align-items: center;
-}
-
-.about-content .section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-content .section-title img {
-    height: 50px;
-    margin-bottom: var(--spacing-md);
-}
-
-.about-content p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-md);
-    text-align: center;
-}
-
-.about-content p + p {
-    margin-bottom: 0;
-    background-color: #F4A261;
-    border-radius: 15px;
-    padding: 8px;
-    color: var(--color-light);
-}
-
-.about-content .btn-primary {
+.unique-title {
+    background-color: #e5724b;
+    padding: 5px;
+    color: #fcedbe;
     display: inline-block;
-    margin-top: var(--spacing-lg);
+    transform: rotate(-2deg);
 }
 
-.about-images-left,
-.about-images-right {
-    position: absolute;
+.about-left h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-right {
+  width: 60%;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-right p {
+    text-align: justify;
+}
+
+.visi-misi {
     width: 100%;
-    height: 100%;
-    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1300px;
 }
 
-.about-images-left {
-    left: 0;
-    top: 0;
+.visimisi-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.about-images-right {
-    right: 0;
-    top: 0;
+.visimisi-title p {
+    max-width: 550px;
 }
 
-.about-img {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    pointer-events: all;
+.visimisi-title h1 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-img:hover {
-    transform: scale(1.05) rotate(0deg) !important;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 3;
+.circle-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 24px;
+  max-width: 1300px;
 }
 
-.about-images-left .tilted-left-1 {
-    top: 10%;
-    left: 5%;
-    transform: rotate(-10deg);
-}
-.about-images-left .tilted-right-2 {
-    top: 35%;
-    left: 12%;
-    transform: rotate(5deg);
-    width: 130px;
-    height: 150px;
-}
-.about-images-left .tilted-left-3 {
-    bottom: 10%;
-    left: 8%;
-    transform: rotate(8deg);
+.circle-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 300px;
+  flex: 1;
 }
 
-.about-images-right .tilted-right-1 {
-    top: 15%;
-    right: 8%;
-    transform: rotate(12deg);
-}
-.about-images-right .tilted-left-2 {
-    top: 50%;
-    right: 5%;
-    transform: rotate(-8deg);
-    width: 160px;
-    height: 160px;
-}
-.about-images-right .tilted-right-3 {
-    bottom: 10%;
-    right: 15%;
-    transform: rotate(7deg);
+.circle-item {
+  text-align: center;
+  height: 200px;
 }
 
-.quote-card {
-    position: absolute;
-    color: #333;
-    padding: 15px 20px;
-    max-width: 220px;
-    border-radius: 12px;
-    font-size: 0.85em;
-    font-style: italic;
-    z-index: 1;
+.circle-icon.one, 
+.circle-icon.three {
+    height: 20px;
 }
 
-.quote-left-1 {
-    top: 10%;
-    left: 11%;
-}
-.quote-left-2 {
-    bottom: 10%;
-    left: 12%;
-}
-
-.quote-right-1 {
-    top: 35%;
-    right: 5%;
+.circle-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 1310px) {
-    .about-images-left,
-    .about-images-right {
+.circle-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;  
+  border-radius: 50%;
+  width: 250px;      
+  height: 250px;
+}
+
+.circle-center img {
+    width: 350px;
+}
+
+.big-circle {
+  width: 350px;
+  height: 350px;
+  background-color: #ff7a45;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 960px) {
+    .visi-misi {
+        padding: 0px 20px;
+    }
+    .circle-center {
         display: none;
     }
-
-    .about-container {
-        justify-content: center;
-        align-items: flex-start; /* Keep original align-items */
-        /* Hapus width: 1600px; dan max-width: 1600px; dari sini */
-        padding: 0 var(--spacing-lg); /* Tambahkan padding agar konten tidak terlalu rapat ke pinggir */
-    }
-
-    .about-content {
-        /* Izinkan about-content untuk meluas */
-        max-width: 100%; /* Biarkan ia mengisi penuh lebar available di dalam about-container */
-        width: 100%;
-        /* Hapus padding dari sini jika about-container sudah mengurusnya */
-    }
-
-    .why-us-section {
-        max-width: 900px; /* Beri max-width yang masuk akal, lebih besar dari aboutSedulur default */
-        width: 100%; /* Agar mengisi hingga max-width */
-        margin: 0 auto var(--spacing-xl) auto; /* Pusatkan dan beri jarak bawah */
-    }
-
-    .aboutSedulur {
-        max-width: 900px; /* Biarkan box filosofi lebih lebar sedikit dari 600px */
-        margin: 0 auto; /* Pusatkan */
-    }
-
-        .why-us-grid {
-        grid-template-columns: 1fr; /* Satu kolom di mobile */
-        max-width: 400px; /* Batasi lebar grid di mobile */
-        margin: 0 auto; /* Pusatkan grid di mobile */
-        justify-content: center; /* Tetap pusatkan item di mobile jika ada baris tidak penuh */
-    }
-
-    .why-us-grid .why-us-box:last-child {
-        /* Reset agar di mobile dia tetap menjadi item normal yang mengisi 1 kolom */
-        grid-column: span 1; /* Pastikan hanya 1 kolom di mobile */
-        justify-self: stretch; /* Memanjang agar mengisi kolom yang tersedia */
-        max-width: 100%; /* Memastikan tidak ada batasan lebar yang mengganggu */
-        /* text-align dan align-items tetap dari aturan di atas */
-    }
-}
-
-@media (max-width: 992px) {
-    /* Aturan untuk 992px ke bawah */
-    .about-content {
-        /* max-width akan diwarisi dari media query 1310px, atau Anda bisa menimpanya di sini */
-        max-width: 100%; /* Pastikan tetap responsif */
-        padding: 0 10px; /* Sesuaikan padding */
-    }
-    .why-us-section {
-        max-width: 700px; /* Sesuaikan lebar di bawah 992px */
-    }
-    .aboutSedulur {
-        max-width: 700px; /* Kembali ke 600px atau sesuai kebutuhan */
-    }
-    .about-img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Aturan untuk 768px ke bawah (tampilan mobile) */
-    .about {
-        padding: 60px 10px;
-        min-height: unset;
-    }
-    .about-container {
+    .circle-layout {
         flex-direction: column;
-        align-items: center;
-        padding: 0; /* Hapus padding jika sudah tidak relevan di mobile */
+    }
+    .circle-item {
+        height: auto;
+        max-height: 180px;
+    }
+    .circle-icon.two {
+        height: 0px;
+    }
+    .circle-icon.four {
+        height: 0px;
+    }
+    .circle-layout {
+        gap: 0px;
+    }
+    .circle-column {
+        max-width: 100%;
+        padding: 0px 30px;
+        gap: 16px;
     }
     .about-content {
-        padding: 6px 15px;
-        order: 1;
-        margin-bottom: 40px;
-        max-width: 100%;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        gap: 0px;
     }
+    .about-left {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .about-right {
+        width: 100%;
+    }
+    .about-right p {
+        text-align: center;
+    }
+}
 
-    .why-us-section {
-        max-width: 100%; /* Isi penuh lebar mobile */
-        padding: 0 10px; /* Tambah padding dalam section */
+@media (min-width: 1032px) and (max-width: 1440px) { 
+    .visi-misi {
+        padding: 0px 100px;
     }
-    .why-us-grid {
-        grid-template-columns: 1fr; /* Satu kolom di mobile */
-        max-width: 400px; /* Batasi lebar box di mobile agar tidak terlalu lebar */
+    .about-content {
+        flex-direction: column;
+        padding: 20px 100px;
+        text-align: center;
+        gap: 0px;
     }
-    .aboutSedulur {
-        max-width: 100%; /* Isi penuh lebar mobile */
-        padding: 10px 15px;
+    .about-left {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .about-right {
+        width: 100%;
+    }
+    .about-right p {
+        text-align: center;
     }
 }
