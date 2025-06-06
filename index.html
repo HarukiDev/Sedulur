@@ -175,12 +175,16 @@
                     <div class="circle-layout">
                         <div class="circle-column left">
                             <div class="circle-item">
-                                <div class="circle-icon one"></div>
+                                <div class="circle-icon one">
+                                    <h1>01</h1>
+                                </div>
                                 <h3>Dukungan Komunitas</h3>
                                 <p>Menjadi bagian dari jaringan UMKM yang saling bantu dan berbagi peluang.</p>
                             </div>
                             <div class="circle-item">
-                                <div class="circle-icon two"></div>
+                                <div class="circle-icon two">
+                                    <h1>02</h1>
+                                </div>
                                 <h3>Etalase Produk Lokal</h3>
                                 <p>Menyediakan platform showcase digital untuk menampilkan beragam produk unggulan UMKM dari berbagai daerah di Sumatera Selatan.</p>
                             </div>
@@ -192,12 +196,16 @@
 
                         <div class="circle-column right">
                             <div class="circle-item">
-                                <div class="circle-icon three"></div>
+                                <div class="circle-icon three">
+                                    <h1>03</h1>
+                                </div>
                                 <h3>Koneksi Langsung ke Pelaku Usaha</h3>
                                 <p>Memudahkan pembeli terhubung langsung ke pemilik UMKM melalui WhatsApp untuk transaksi atau tanya jawab.</p>
                             </div>
                             <div class="circle-item">
-                                <div class="circle-icon four"></div>
+                                <div class="circle-icon four">
+                                    <h1>04</h1>
+                                </div>
                                 <h3>Penguatan Jejaring Lokal</h3>
                                 <p>Mendorong sinergi antar UMKM dan membuka peluang kolaborasi lintas komunitas lokal.</p>
                             </div>
@@ -223,14 +231,101 @@
 
         <!-- product -->
         <section class="products" id="products">
+        <div class="products-slider">
+            <div class="products-bg">
+            <div class="products-bg-image current-image">
+                <img src="./img/Hero/AMPERA.jpg" alt="Jembatan Ampera" />
+            </div>
+            <div class="products-bg-image next-image">
+                <img src="./img/Hero/52760770679_b7272140be_w.jpg" alt="Pempek" />
+            </div>
+            <div class="products-bg-image previous-image">
+                <img src="./img/Hero/Melestarikan_Songket_Palembang.jpg" alt="Songket Palembang" />
+            </div>
+            </div>
 
+            <div class="products-cardList">
+            <button class="products-btn products-btn-left" aria-label="Previous product">
+                <div class="icon">
+                <svg>
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+                </div>
+            </button>
+
+            <div class="products-cards-wrapper">
+                <div class="products-card current-card">
+                <div class="products-card-image">
+                    <img src="./img/Hero/AMPERA.jpg" alt="Jembatan Ampera" />
+                </div>
+                </div>
+
+                <div class="products-card next-card">
+                <div class="products-card-image">
+                    <img src="./img/Hero/52760770679_b7272140be_w.jpg" alt="Pempek" />
+                </div>
+                </div>
+
+                <div class="products-card previous-card">
+                <div class="products-card-image">
+                    <img src="./img/Hero/Melestarikan_Songket_Palembang.jpg" alt="Songket Palembang" />
+                </div>
+                </div>
+            </div>
+
+            <button class="products-btn products-btn-right" aria-label="Next product">
+                <div class="icon">
+                <svg>
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+                </div>
+            </button>
+            </div>
+
+            <div class="products-infoList">
+            <div class="products-info-wrapper">
+                <div class="products-info current-info">
+                <h2 class="text name">Jembatan Ampera</h2>
+                <h4 class="text location">Palembang</h4>
+                <p class="text description">Ikonik landmark of Sumatera Selatan, symbolizing local pride.</p>
+                </div>
+
+                <div class="products-info next-info">
+                <h2 class="text name">Pempek</h2>
+                <h4 class="text location">Palembang</h4>
+                <p class="text description">Traditional fishcake delicacy, a must-try local culinary.</p>
+                </div>
+
+                <div class="products-info previous-info">
+                <h2 class="text name">Songket Palembang</h2>
+                <h4 class="text location">Palembang</h4>
+                <p class="text description">Handwoven fabric with intricate gold threads, a cultural treasure.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="products-support">
+            <a target="_blank" aria-label="Sedulur">  
+                <img src="./img/logo.png" alt="Sedulur" />
+            </a>
+            </div>
+        </div>
+
+        <svg class="products-icons" style="display: none;">
+            <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polyline points="328 112 184 256 328 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px" />
+            </symbol>
+            <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polyline points="184 112 328 256 184 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:48px" />
+            </symbol>
+        </svg>
         </section>
 
         <!-- contact -->
 
         <!-- closer -->
         <section class="closer">
-            <div class="closer-container">
+            <div class="closer-container desktop-only">
                 <div class="footerimages-left">
                     <img src="img/about-img-1.jpg" alt="About Image 1" class="about-img tilted-left-1">
                     <img src="img/about-img-2.jpg" alt="About Image 2" class="about-img tilted-right-2">
@@ -256,6 +351,33 @@
                     </div>
                 </div>
             </div>
+
+            <div class="closer-container mobile-only">
+                <div class="footer-content"> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos illum ducimus tempore fugit laboriosam aliquam porro, nam id obcaecati eos labore esse doloremque quas adipisci neque minus architecto fugiat nemo blanditiis quos nostrum ratione molestias quisquam voluptas? Ipsam hic impedit dolore odio harum aliquam, ad, similique culpa esse nobis nostrum.</p>
+                </div>
+
+                <div class="image-columns-wrapper"> <div class="footerimages-left">
+                        <img src="img/about-img-1.jpg" alt="About Image 1" class="about-img tilted-left-1">
+                        <img src="img/about-img-2.jpg" alt="About Image 2" class="about-img tilted-right-2">
+                        <img src="img/about-img-3.jpg" alt="About Image 3" class="about-img tilted-left-3">
+                        <div class="quote-card quote-left-1">
+                            <p>"UMKM adalah jantung ekonomi rakyat. Dukung, beli, banggakan!"</p>
+                        </div>
+                        <div class="quote-card quote-left-2">
+                            <p>"Bersama Sedulur, kita kuatkan saudara-saudara penggerak ekonomi lokal."</p>
+                        </div>
+                    </div>
+
+                    <div class="footerimages-right">
+                        <img src="img/about-img-4.jpg" alt="About Image 4" class="about-img tilted-right-1">
+                        <img src="img/about-img-5.jpg" alt="About Image 5" class="about-img tilted-left-2">
+                        <img src="img/about-img-6.jpg" alt="About Image 6" class="about-img tilted-right-3">
+                        <div class="quote-card quote-right-1">
+                            <p>"Satu pembelian kecilmu, adalah langkah besar bagi UMKM Sumsel."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
@@ -263,6 +385,8 @@
     <script src="javascript/nav.js"></script>
     <script src="javascript/heroCardSlider.js"></script>
     <script src="javascript/animateOnScroll.js"></script>
+    <script src="javascript/productsCardSlider.js"></script>
+    
 </body>
 
 </html>
