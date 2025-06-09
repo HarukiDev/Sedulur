@@ -1,34 +1,58 @@
 [data-aos] {
     opacity: 0;
-    transition-property: opacity, transform; 
-    transition-duration: 0.8s; 
+    transition-property: opacity, transform;
+    transition-duration: 0.8s;
     transition-timing-function: ease-out;
-    pointer-events: none; 
+    pointer-events: none; /* Tetap nonaktif saat animasi belum selesai */
 }
 
-/* Kondisi akhir (muncul) saat elemen terlihat di viewport */
+/* Kondisi akhir saat animasi selesai */
 [data-aos].aos-animate {
     opacity: 1;
-    transform: translate(0, 0) scale(1); 
-    pointer-events: auto; 
+    pointer-events: auto; /* Kembali aktif setelah animasi */
 }
 
+/* Efek AOS spesifik dengan menjaga translateZ */
 [data-aos="fade-up"] {
-    transform: translateY(30px);
+    transform: translateY(30px) translateZ(2rem);
+}
+
+[data-aos].aos-animate[data-aos="fade-up"] {
+    transform: translateY(0) translateZ(2rem); /* Menjaga translateZ */
 }
 
 [data-aos="fade-left"] {
-    transform: translateX(30px); 
+    transform: translateX(30px) translateZ(2rem);
+}
+
+[data-aos].aos-animate[data-aos="fade-left"] {
+    transform: translateX(0) translateZ(2rem);
 }
 
 [data-aos="fade-right"] {
-    transform: translateX(-30px); 
+    transform: translateX(-30px) translateZ(2rem);
+}
+
+[data-aos].aos-animate[data-aos="fade-right"] {
+    transform: translateX(0) translateZ(2rem);
 }
 
 [data-aos="fade-in"] {
-    transform: none; 
+    transform: translateZ(2rem);
 }
 
+[data-aos].aos-animate[data-aos="fade-in"] {
+    transform: translateZ(2rem);
+}
+
+/* Efek Fade dengan Rotasi 360 derajat dan Perubahan Ukuran */
+[data-aos="fade-rotate-grow"] {
+    transform: translateY(30px) scale(0.5) rotate(0deg) translateZ(2rem);
+}
+
+[data-aos].aos-animate[data-aos="fade-rotate-grow"] {
+    transform: translateY(0) scale(1) rotate(360deg) translateZ(2rem);
+}
 
 /* Efek Delay */
 [data-aos-delay="100"] { transition-delay: 0.1s; }

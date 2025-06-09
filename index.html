@@ -8,6 +8,7 @@
     <!-- css -->
     <link rel="stylesheet" href="CSS/global.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/animateOnScroll.css">
     
     <!-- css section -->
@@ -16,6 +17,8 @@
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/closer.css">
+
+    
 </head>
 <body>
     <!-- navbar -->
@@ -169,19 +172,19 @@
             <div class="about-container">
                 <div class="visi-misi">
                     <div class="visimisi-title">
-                        <h1>Visi & Misi Kami!</h1>
-                        <p>Menguatkan UMKM Sumsel melalui kolaborasi, digitalisasi, dan jaringan komunitas yang solid.</p>
+                        <h1 data-aos="fade-up" data-aos-delay="500">Visi & Misi Kami!</h1>
+                        <p data-aos="fade-up" data-aos-delay="200">Menguatkan UMKM Sumsel melalui kolaborasi, digitalisasi, dan jaringan komunitas yang solid.</p>
                     </div>
                     <div class="circle-layout">
                         <div class="circle-column left">
-                            <div class="circle-item">
+                            <div class="circle-item" data-aos="fade-left" data-aos-delay="300">
                                 <div class="circle-icon one">
                                     <h1>01</h1>
                                 </div>
                                 <h3>Dukungan Komunitas</h3>
                                 <p>Menjadi bagian dari jaringan UMKM yang saling bantu dan berbagi peluang.</p>
                             </div>
-                            <div class="circle-item">
+                            <div class="circle-item" data-aos="fade-left" data-aos-delay="300">
                                 <div class="circle-icon two">
                                     <h1>02</h1>
                                 </div>
@@ -190,19 +193,19 @@
                             </div>
                         </div>
 
-                        <div class="circle-center">
+                        <div class="circle-center" data-aos="fade-rotate-grow" data-aos-delay="300">
                             <img src="img/logo.png" alt="Sedulur">
                         </div>
 
                         <div class="circle-column right">
-                            <div class="circle-item">
+                            <div class="circle-item" data-aos="fade-right" data-aos-delay="300">
                                 <div class="circle-icon three">
                                     <h1>03</h1>
                                 </div>
                                 <h3>Koneksi Langsung ke Pelaku Usaha</h3>
                                 <p>Memudahkan pembeli terhubung langsung ke pemilik UMKM melalui WhatsApp untuk transaksi atau tanya jawab.</p>
                             </div>
-                            <div class="circle-item">
+                            <div class="circle-item" data-aos="fade-right" data-aos-delay="300">
                                 <div class="circle-icon four">
                                     <h1>04</h1>
                                 </div>
@@ -214,10 +217,10 @@
                 </div>
                 <div class="about-contentContainer">
                     <div class="about-content">
-                        <div class="about-left">
+                        <div class="about-left" data-aos="fade-left" data-aos-delay="500">
                             <h2>Sedulur untuk <span class="unique-title">UMKM Sumsel</span> Merangkai Kekuatan Lokal Menuju Masa Depan Digital</h2>
                         </div>
-                        <div class="about-right">
+                        <div class="about-right" data-aos="fade-right" data-aos-delay="300">
                         <p>
                             Sedulur adalah semangat kolaborasi yang menggerakkan pelaku UMKM di seluruh penjuru Sumatera Selatan.
                             Dari lorong pasar tradisional hingga galeri kreatif digital, Sedulur menyatukan pengusaha lokal dalam satu visi:
@@ -231,162 +234,267 @@
 
         <!-- product -->
         <section class="products" id="products">
-        <div class="products-slider">
-            <div class="products-bg">
-            <div class="products-bg-image current-image">
-                <img src="./img/Hero/AMPERA.jpg" alt="Jembatan Ampera" />
+            <div class="products-slider">
+                <div class="products-bg">
+                    <div class="products-bg-image current-image" data-info-id="1" >
+                        <img src="./img/Testimonial/Pindang_Ikan_Tembakang.jpg" alt="makanan" />
+                    </div>
+                    <div class="products-bg-image next-image" data-info-id="2">
+                        <img src="./img/Testimonial/Aesan_Paksangko_(_Pakaian_Tradisional_Palembang).jpg" alt="pakaian" />
+                    </div>
+                    <div class="products-bg-image previous-image" data-info-id="3">
+                        <img src="./img/oleholeh.jpg" alt="Oleh-oleh" />
+                    </div>
+                </div>
+
+                <div class="products-cardList">
+                    <button class="products-btn products-btn-left" aria-label="Previous product">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </div>
+                    </button>
+
+                    <div class="products-cards-wrapper">
+                        <div class="products-card current-card" data-info-id="1">
+                            <div class="products-card-image" data-aos="fade-up" data-aos-delay="300">
+                                <img src="./img/Testimonial/Pindang_Ikan_Tembakang.jpg" alt="makanan" />
+                            </div>
+                        </div>
+                        <div class="products-card next-card" data-info-id="2">
+                            <div class="products-card-image" data-aos="fade-up" data-aos-delay="300">
+                                <img src="./img/Testimonial/Aesan_Paksangko_(_Pakaian_Tradisional_Palembang).jpg" alt="pakaian"/>
+                            </div>
+                        </div>
+                        <div class="products-card previous-card" data-info-id="3">
+                            <div class="products-card-image" data-aos="fade-up" data-aos-delay="300">
+                                <img src="./img/oleholeh.jpg" alt="Oleh-oleh" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="products-btn products-btn-right" aria-label="Next product">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                
+                <div class="products-infoList">
+                    <div class="products-info-wrapper">
+                        <div class="products-info current-info" data-info-id="1">
+                            <h2 class="text name">Makanan</h2>
+                            <p class="text description">Nikmati kelezatan kuliner Palembang yang autentik, dari pempek hingga aneka jajanan tradisional.</p>
+                        </div>
+                        <div class="products-info next-info" data-info-id="2">
+                            <h2 class="text name">Pakaian</h2>
+                            <p class="text description">Temukan pesona songket, batik, dan busana khas Palembang yang memadukan tradisi dan tren.</p>
+                        </div>
+                        <div class="products-info previous-info" data-info-id="3">
+                            <h2 class="text name">Oleh-oleh</h2>
+                            <p class="text description">Temukan cendera mata dan karya khas Palembang yang cocok untuk buah tangan—unik, bermakna, dan sarat budaya.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-buttons-container">
+                    <div class="text-button active" data-button-id="1">
+                        <a href="/makanan">Lihat Produk</a>
+                    </div>
+                    <div class="text-button" data-button-id="2">
+                        <a href="/pakaian">Lihat Produk</a>
+                    </div>
+                    <div class="text-button" data-button-id="3">
+                        <a href="/oleh-oleh">Lihat Produk</a>
+                    </div>
+                </div>
             </div>
-            <div class="products-bg-image next-image">
-                <img src="./img/Hero/52760770679_b7272140be_w.jpg" alt="Pempek" />
-            </div>
-            <div class="products-bg-image previous-image">
-                <img src="./img/Hero/Melestarikan_Songket_Palembang.jpg" alt="Songket Palembang" />
-            </div>
-            </div>
 
-            <div class="products-cardList">
-            <button class="products-btn products-btn-left" aria-label="Previous product">
-                <div class="icon">
-                <svg>
-                    <use xlink:href="#arrow-left"></use>
-                </svg>
-                </div>
-            </button>
+            <svg class="products-icons" style="display: none;">
+                <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <polyline points="328 112 184 256 328 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px" />
+                </symbol>
+                <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <polyline points="184 112 328 256 184 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:48px" />
+                </symbol>
+            </svg>
+        </section>
 
-            <div class="products-cards-wrapper">
-                <div class="products-card current-card">
-                <div class="products-card-image">
-                    <img src="./img/Hero/AMPERA.jpg" alt="Jembatan Ampera" />
-                </div>
-                </div>
-
-                <div class="products-card next-card">
-                <div class="products-card-image">
-                    <img src="./img/Hero/52760770679_b7272140be_w.jpg" alt="Pempek" />
-                </div>
+        <!-- closer -->
+        <section class="testimonial-section">
+            <div class="testimonial-wrapper">
+                <div class="testimonial-side testimonial-left" data-aos="fade-left" data-aos-delay="500">
+                    <img src="img/Testimonial/Berugo.jpg" alt="">
+                    <img src="img/Testimonial/Lenggang_Goreng_dengan_Cuko.jpg" alt="">
+                    <img src="img/Testimonial/Pindang_Ikan_Tembakang.jpg" alt="">
+                    <img src="img/Icon/icons8-starburst-shape-48.png" alt="star-icon">
+                    <img src="img/Icon/icons8-fibonacci-circles-24.png" alt="circle">
+                    <span>Produk UMKM Lokal</span>
                 </div>
 
-                <div class="products-card previous-card">
-                <div class="products-card-image">
-                    <img src="./img/Hero/Melestarikan_Songket_Palembang.jpg" alt="Songket Palembang" />
-                </div>
-                </div>
-            </div>
-
-            <button class="products-btn products-btn-right" aria-label="Next product">
-                <div class="icon">
-                <svg>
-                    <use xlink:href="#arrow-right"></use>
-                </svg>
-                </div>
-            </button>
-            </div>
-
-            <div class="products-infoList">
-            <div class="products-info-wrapper">
-                <div class="products-info current-info">
-                <h2 class="text name">Jembatan Ampera</h2>
-                <h4 class="text location">Palembang</h4>
-                <p class="text description">Ikonik landmark of Sumatera Selatan, symbolizing local pride.</p>
+                <div class="testimonial-main" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-header">
+                        <h1>Tunggu Apa Lagi? Ayo Daftarkan Produk UMKM Kamu, Wong Sumsel!</h1>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Daftar sekarang di website Sedulur, tempat bagi pelaku UMKM Sumsel untuk mendaftarkan produk mereka dan memperluas jangkauan pasar. Meski pembelian dan pembayaran masih lewat WhatsApp penjual, kamu tetap mudah mempromosikan produk dan menjalin hubungan langsung dengan pembeli. Yuk, mulai langkahmu bersama komunitas yang solid demi kemajuan bisnis!</p>
+                        <q style="font-weight: 900; margin-top: 20px;">Bunga melati harum semerbak, Tumbuh subur di tepi kali, Daftar Sedulur jangan ragu,  UMKM Sumsel maju berseri.
+                        </q>
+                    </div>
+                    <button class="scroll-down-button" aria-label="Scroll down">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21L3 12h5V3h8v9h5z" />
+                        </svg>
+                    </button>
                 </div>
 
-                <div class="products-info next-info">
-                <h2 class="text name">Pempek</h2>
-                <h4 class="text location">Palembang</h4>
-                <p class="text description">Traditional fishcake delicacy, a must-try local culinary.</p>
-                </div>
-
-                <div class="products-info previous-info">
-                <h2 class="text name">Songket Palembang</h2>
-                <h4 class="text location">Palembang</h4>
-                <p class="text description">Handwoven fabric with intricate gold threads, a cultural treasure.</p>
+                <div class="testimonial-side testimonial-right" data-aos="fade-right" data-aos-delay="500">
+                    <img src="img/Testimonial/Aesan_Paksangko_(_Pakaian_Tradisional_Palembang).jpg" alt="">
+                    <img src="img/Testimonial/Soengkit_met_nampan_perak-patroon_afkomstig_uit_Palembang,_KITLV_5587.tiff.jpg" alt="">
+                    <img src="img/Testimonial/Aneka_Kue_di_Toko_Kue_Harum.jpg" alt="">
+                    <img src="img/Icon/icons8-hand-drawn-star-50.png" alt="handDrawn-star">
+                    <img src="img/Icon/icons8-starburst-shape-48.png" alt="star-icon">
+                    <span>Sumsel Pride!</span>
+                    <span>Karya Sumsel</span>
                 </div>
             </div>
-            </div>
+        </section>
 
-            <div class="products-support">
-            <a target="_blank" aria-label="Sedulur">  
-                <img src="./img/logo.png" alt="Sedulur" />
-            </a>
+        <section class="quote-scroll-section">
+            <div class="quote-scroll-container">
+                <div class="quote-scroll-content">
+                    <span>"UMKM: Usaha Maju Kaya Mandiri."</span>
+                    <span>"Inovasi Tiada Henti, UMKM Terus Bersemi!"</span>
+                    <span>"Sedulur UMKM: Bersama Kita Hebat!"</span>
+                    <span>"Karya Lokal, Kebanggaan Global."</span>
+                    <span>"UMKM Sumsel, Inspirasi Negeri."</span>
+                    <span>"Semangat Berusaha, Raih Cita-cita UMKM."</span>
+                    <span>"Dari Sumsel untuk Indonesia."</span>
+                    <span>"UMKM: Pilar Ekonomi Kreatif."</span>
+                </div>
+                <div class="quote-scroll-content" aria-hidden="true">
+                    <span>"UMKM: Usaha Maju Kaya Mandiri."</span>
+                    <span>"Inovasi Tiada Henti, UMKM Terus Bersemi!"</span>
+                    <span>"Sedulur UMKM: Bersama Kita Hebat!"</span>
+                    <span>"Karya Lokal, Kebanggaan Global."</span>
+                    <span>"UMKM Sumsel, Inspirasi Negeri."</span>
+                    <span>"Semangat Berusaha, Raih Cita-cita UMKM."</span>
+                    <span>"Dari Sumsel untuk Indonesia."</span>
+                    <span>"UMKM: Pilar Ekonomi Kreatif."</span>
+                </div>
             </div>
-        </div>
-
-        <svg class="products-icons" style="display: none;">
-            <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <polyline points="328 112 184 256 328 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px" />
-            </symbol>
-            <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <polyline points="184 112 328 256 184 400" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:48px" />
-            </symbol>
-        </svg>
         </section>
 
         <!-- contact -->
-
-        <!-- closer -->
-        <section class="closer">
-            <div class="closer-container desktop-only">
-                <div class="footerimages-left">
-                    <img src="img/about-img-1.jpg" alt="About Image 1" class="about-img tilted-left-1">
-                    <img src="img/about-img-2.jpg" alt="About Image 2" class="about-img tilted-right-2">
-                    <img src="img/about-img-3.jpg" alt="About Image 3" class="about-img tilted-left-3">
-                    <div class="quote-card quote-left-1">
-                        <p>"UMKM adalah jantung ekonomi rakyat. Dukung, beli, banggakan!"</p>
-                    </div>
-                    <div class="quote-card quote-left-2">
-                        <p>"Bersama Sedulur, kita kuatkan saudara-saudara penggerak ekonomi lokal."</p>
-                    </div>
-                </div>
-
-                <div class="footer-content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos illum ducimus tempore fugit laboriosam aliquam porro, nam id obcaecati eos labore esse doloremque quas adipisci neque minus architecto fugiat nemo blanditiis quos nostrum ratione molestias quisquam voluptas? Ipsam hic impedit dolore odio harum aliquam, ad, similique culpa esse nobis nostrum.</p>
-                </div>
-
-                <div class="footerimages-right">
-                    <img src="img/about-img-4.jpg" alt="About Image 4" class="about-img tilted-right-1">
-                    <img src="img/about-img-5.jpg" alt="About Image 5" class="about-img tilted-left-2">
-                    <img src="img/about-img-6.jpg" alt="About Image 6" class="about-img tilted-right-3">
-                    <div class="quote-card quote-right-1">
-                        <p>"Satu pembelian kecilmu, adalah langkah besar bagi UMKM Sumsel."</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="closer-container mobile-only">
-                <div class="footer-content"> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos illum ducimus tempore fugit laboriosam aliquam porro, nam id obcaecati eos labore esse doloremque quas adipisci neque minus architecto fugiat nemo blanditiis quos nostrum ratione molestias quisquam voluptas? Ipsam hic impedit dolore odio harum aliquam, ad, similique culpa esse nobis nostrum.</p>
-                </div>
-
-                <div class="image-columns-wrapper"> <div class="footerimages-left">
-                        <img src="img/about-img-1.jpg" alt="About Image 1" class="about-img tilted-left-1">
-                        <img src="img/about-img-2.jpg" alt="About Image 2" class="about-img tilted-right-2">
-                        <img src="img/about-img-3.jpg" alt="About Image 3" class="about-img tilted-left-3">
-                        <div class="quote-card quote-left-1">
-                            <p>"UMKM adalah jantung ekonomi rakyat. Dukung, beli, banggakan!"</p>
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <div class="contact-left-content" data-aos="fade-left" data-aos-delay="300">
+                    <h2>Kirim Pesan <br> Langsung lewat WhatsApp kami!</h2>
+                    <form id="whatsappContactForm"> <div class="form-field">
+                            <label for="fullName">Nama Lengkap</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama Anda" required>
                         </div>
-                        <div class="quote-card quote-left-2">
-                            <p>"Bersama Sedulur, kita kuatkan saudara-saudara penggerak ekonomi lokal."</p>
+                        <div class="form-field">
+                            <label for="emailOptional">Email (Opsional)</label>
+                            <input type="email" id="emailOptional" name="emailOptional" placeholder="email@contoh.com">
                         </div>
-                    </div>
+                        <div class="form-field">
+                            <label for="message">Pesan Anda</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="send-whatsapp-button">
+                            Kirim Pesan ke WhatsApp
+                        </button>
+                    </form>
+                </div>
 
-                    <div class="footerimages-right">
-                        <img src="img/about-img-4.jpg" alt="About Image 4" class="about-img tilted-right-1">
-                        <img src="img/about-img-5.jpg" alt="About Image 5" class="about-img tilted-left-2">
-                        <img src="img/about-img-6.jpg" alt="About Image 6" class="about-img tilted-right-3">
-                        <div class="quote-card quote-right-1">
-                            <p>"Satu pembelian kecilmu, adalah langkah besar bagi UMKM Sumsel."</p>
-                        </div>
-                    </div>
+                <div class="contact-right-content" data-aos="fade-right" data-aos-delay="300">
+                    <h3>Mari Bicara tentang Potensi.</h3>
+                    <p>Untuk pengajuan produk UMKM Anda, Anda bisa mengisi formulir lengkap dan menemukan informasi lebih lanjut melalui link di bawah ini. Kami akan memandu Anda dalam setiap langkah prosesnya.</p>
+                    <a href="/link-pengajuan-produk" class="product-submission-link">
+                        Ajukan Produk Sekarang
+                    </a>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="dotted-background">
+            <div class="dotted-pattern"></div>
+            <div class="gradient-overlay">
+                <div class="gradient-left"></div>
+                <div class="gradient-right"></div>
+                <div class="gradient-top"></div>
+                <div class="gradient-bottom"></div>
+            </div>
+        </div>
+        
+        <div class="footer-container">
+            <div class="footer-heading-wrapper">
+                <img src="img/logo-putih.png" alt="logo">
+            </div>
+
+            <div class="footer-contact-info">
+                <p class="footer-text-secondary">jimmymaulana01@gmail.com</p>
+                <p class="footer-text-secondary">+62 812 7346 5572</p>
+            </div>
+
+            <div class="footer-bottom-info">
+                <div class="footer-meta-info">
+                    <div class="footer-meta-item">
+                        <h1 class="footer-meta-title">Version</h1>
+                        <p class="footer-text-secondary">Sedulur ©Edition</p>
+                    </div>
+
+                    <div class="footer-meta-item">
+                        <h1 class="footer-meta-title">Author</h1>
+                        <p class="footer-text-secondary">Jimmy Maulana</p>
+                    </div>
+                </div>
+
+                <div class="footer-social-media">
+                    <h1 class="footer-meta-title">Social Media</h1>
+                    <div class="footer-social-links">
+                        <a
+                            href="https://www.instagram.com/jm__sora/profilecard/?igsh=Yzh1ZDd2cmJhdWNl"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer-social-link"
+                        >
+                            Instagram
+                        </a>
+                        <a
+                            href="https://github.com/HarukiDev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer-social-link"
+                        >
+                            Github
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/jimmy-maulana-1622b1270"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer-social-link"
+                        >
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <!-- javascript -->
     <script src="javascript/nav.js"></script>
     <script src="javascript/heroCardSlider.js"></script>
     <script src="javascript/animateOnScroll.js"></script>
     <script src="javascript/productsCardSlider.js"></script>
-    
+    <script src="javascript/arrowBottom.js"></script>
 </body>
 
 </html>

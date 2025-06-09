@@ -45,6 +45,7 @@ body {
   background-color: var(--color-background-main);
   color: var(--color-primary);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* Elemen global */
