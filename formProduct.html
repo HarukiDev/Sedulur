@@ -10,55 +10,66 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <!-- css section -->
-    <link rel="stylesheet" href="CSS/procedure.css">
+    <link rel="stylesheet" href="css/formProduct.css">
 </head>
 <body>
     <header>
-        <div class="katalogUnik-header-content">
-            <a href="index.html" class="katalogUnik-back-btn">< Back</a>
+        <div class="header-content">
+            <a href="index.html" class="back-btn">< Back</a>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="procedure">
-                <h1>Cara <span class="unique-title">Pemesanan</span></h1>
+            <div class="formProduct-hero">
+                <h1>Ajukan <span class="unique-title">Produk UMKM</span> Kamu!</h1>
                 <p>Ikuti langkah-langkah mudah berikut untuk melakukan pemesanan dengan cepat dan aman melalui website kami.</p>
             </div>
         </section>
-        <section class="procedureTimeline">
-            <div class="Order-timeline">
-                <div class="timeline">
-                    <div class="timeline-content">
-                        <h3 class="title">Akses Katalog Produk</h3>
-                        <p class="description">
-                            Mulai petualangan belanja Anda dengan mengklik logo keranjang atau tombol "Lihat product" yang jelas untuk menjelajahi koleksi kami atau bisa juga melalui navigasi pada section home di index.html.
-                        </p>
-                    </div>
+
+        <section class="umkm-submission-section" id="umkm-submission">
+            <div class="umkm-submission-container">
+                <div class="umkm-submission-left-content" data-aos="fade-left" data-aos-delay="300">
+                    <h2>Ajukan Produk UMKM Anda <br> Langsung ke WhatsApp!</h2>
+                    <form id="umkmSubmissionForm">
+                        <div class="form-field">
+                            <label for="sellerName">Nama Penjual/Toko</label>
+                            <input type="text" id="sellerName" name="sellerName" placeholder="Masukkan nama penjual atau toko" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phoneNumber">Nomor Telepon</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Masukkan nomor telepon (contoh: +62812...)" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="productCategory">Kategori Produk</label>
+                            <select id="productCategory" name="productCategory" required>
+                                <option value="" disabled selected>Pilih kategori</option>
+                                <option value="makanan">Makanan</option>
+                                <option value="pakaian">Pakaian</option>
+                                <option value="oleh-oleh">Oleh-Oleh</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="productName">Nama Produk</label>
+                            <input type="text" id="productName" name="productName" placeholder="Masukkan nama produk" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="productDescription">Deskripsi Produk</label>
+                            <textarea id="productDescription" name="productDescription" rows="5" placeholder="Tulis deskripsi produk Anda di sini..." required></textarea>
+                        </div>
+                        <p class="note">*Catatan Untuk Gambar Produk: Silakan unggah dan kirim manual gambar di WhatsApp jika diperlukan.</p>
+                        <button type="submit" class="send-whatsapp-button">
+                            Kirim Pesan ke WhatsApp
+                        </button>
+                    </form>
                 </div>
-                <div class="timeline">
-                    <div class="timeline-content"> 
-                        <h3 class="title">Pilih Produk Favorit</h3>
-                        <p class="description">
-                            Temukan produk yang menarik hati Anda dan klik untuk melihat detail lebih lanjut di halaman informationProduct.html.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-content">  
-                        <h3 class="title">Hubungi Penjual</h3>
-                        <p class="description">
-                            Klik tombol "Hubungi Penjual" untuk langsung terhubung via WhatsApp dengan penjual secara otomatis.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-content">  
-                        <h3 class="title">Ajukan Pertanyaan dengan Sopan</h3>
-                        <p class="description">
-                            Ketik pesan yang sopan seperti, "Selamat sore, saya tertarik dengan produk ini. Bisakah Anda memberikan detail lebih lanjut atau konfirmasi ketersediaan? Terima kasih!" untuk berkomunikasi dengan pembeli.
-                        </p>
-                    </div>
+
+                <div class="umkm-submission-right-content" data-aos="fade-right" data-aos-delay="300">
+                    <h3>Jelajahi Produk UMKM</h3>
+                    <p>Lihat berbagai produk inovatif dari UMKM yang telah bergabung. Temukan inspirasi dan dukungan untuk bisnis lokal!</p>
+                    <a href="katalog.html" class="product-submission-link">
+                        Lihat Produk Selengkapnya
+                    </a>
                 </div>
             </div>
         </section>
@@ -130,5 +141,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- javascript -->
+    <script src="javascript/formProduct.js"></script>
 </body>
 </html>

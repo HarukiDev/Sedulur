@@ -1,0 +1,266 @@
+header {
+	padding: 70px 20px 10px;
+	width: 100%;
+	text-align: center;
+}
+
+body {
+	position: relative !important;
+	background-color: #f9e39c !important;
+	overflow-x: hidden !important;
+}
+
+body::before {
+	content: "" !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	background: url("../img/72832455_fuyt1.jpg") repeat !important;
+	background-size: cover !important;
+	opacity: 0.7 !important;
+	z-index: -1 !important;
+}
+
+.header-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.unique-title {
+	background-color: #e5724b;
+	padding: 3px;
+	color: #fcedbe;
+	display: inline-block;
+	transform: rotate(-1deg);
+}
+
+.back-btn {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--color-primary);
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.back-btn:hover {
+	color: #c4846f;
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	max-height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 20px 0px;
+	flex-direction: column;
+}
+
+.hero h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.8rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 25px;
+}
+
+.hero p {
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 25px;
+	max-width: 80%;
+}
+
+.product-hero {
+	max-width: 800px;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+	.hero {
+		height: 70vh;
+		padding: 70px 20px 0px;
+	}
+}
+
+.catalog {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	justify-items: center;
+	max-width: 1200px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+}
+
+.searching {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px 40px;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.searching p {
+	margin: 0;
+	color: #555;
+	font-size: 0.9rem;
+}
+
+.search-container {
+	padding: 5px;
+}
+
+.search-container,
+.filter-container {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-container input {
+	width: 400px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+.filter-container select {
+	width: 200px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	outline: none;
+	transition: border-color 0.3s;
+	cursor: pointer;
+}
+
+.search-container input:focus,
+.filter-container select:focus {
+	border-color: #e5724b;
+}
+
+@media (max-width: 768px) {
+	.searching {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.search-container input {
+		width: 100%;
+		max-width: 400px;
+	}
+
+	.filter-container select {
+		width: 100%;
+		max-width: 200px;
+	}
+}
+
+.card {
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	transition: transform 0.5s, box-shadow 0.5s;
+	overflow: hidden;
+	border: 2px solid var(--color-primary);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.card-content {
+	padding: 1rem;
+	background-color: white;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+.card-content .brand {
+	color: #6b7280;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+
+.card-content .product-name {
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #111827;
+	margin-bottom: 0.75rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.price-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.price {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #111827;
+}
+
+.original-price {
+	font-size: 0.875rem;
+	color: #6b7280;
+	text-decoration: line-through;
+}
+
+.buy-cart {
+	margin-left: auto;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 100%;
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 480px) {
+	.catalog {
+		grid-template-columns: 1fr;
+	}
+}

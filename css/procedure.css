@@ -1,0 +1,213 @@
+header {
+	padding: 70px 20px 10px;
+	width: 100%;
+	text-align: center;
+}
+
+body {
+    position: relative !important;
+    background-color: #f9e39c !important;
+    overflow-x: hidden !important;
+}
+
+body::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: url("../img/72832455_fuyt1.jpg") repeat !important;
+    background-size: cover !important;
+    opacity: 0.7 !important;
+    z-index: -1 !important;
+}
+
+.katalogUnik-header-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.unique-title {
+	background-color: #e5724b;
+	padding: 3px;
+	color: #fcedbe;
+	display: inline-block;
+	transform: rotate(-1deg);
+}
+
+.katalogUnik-back-btn {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--color-primary);
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.katalogUnik-back-btn:hover {
+	color: #c4846f;
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: 30vh;
+	max-height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 20px 0px;
+}
+
+.hero h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.8rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 25px;
+}
+
+.hero p {
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 25px;
+	max-width: 80%;
+}
+
+.procedure {
+	max-width: 800px;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Order-timeline {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 10px 70px 70px;
+}
+.Order-timeline:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.Order-timeline .timeline {
+	width: calc(50% + 17px);
+	padding: 0 30px 30px 0;
+	float: left;
+	position: relative;
+}
+.Order-timeline .timeline:before,
+.Order-timeline .timeline:after {
+	content: "";
+	height: 60px;
+	width: 2px;
+	border-left: 2px solid #f4a261;
+	transform: rotate(-45deg);
+	position: absolute;
+	right: 30px;
+	bottom: 0;
+}
+.Order-timeline .timeline:after {
+	background-color: #fff;
+	height: 20px;
+	width: 20px;
+	border: 6px solid #f4a261;
+	border-radius: 50%;
+	right: 0;
+}
+.Order-timeline .timeline-content {
+	background: #f4a261;
+	text-align: center;
+	min-height: 170px;
+	padding: 30px 35px 35px;
+	border-radius: 15px 15px 0 15px;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	box-shadow: var(--shadow);
+}
+.Order-timeline .timeline-content:before {
+	content: "";
+	background-color: #fff;
+	position: absolute;
+	left: 17px;
+	right: 17px;
+	top: 17px;
+	bottom: 17px;
+	z-index: -1;
+}
+.Order-timeline .timeline-content:hover {
+	opacity: 0.9;
+}
+.Order-timeline .title {
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0 0 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Order-timeline .description {
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	line-height: 18px;
+	margin: 0;
+}
+.Order-timeline .timeline:nth-child(even) {
+	padding: 0 0 30px 30px;
+	float: right;
+}
+.Order-timeline .timeline:nth-child(even):before {
+	border-left: 2px solid var(--color-primary);
+	transform: rotate(45deg);
+	right: auto;
+	left: 30px;
+}
+.Order-timeline .timeline:nth-child(even):after {
+	border: 6px solid var(--color-primary);
+	right: auto;
+	left: 0;
+}
+.Order-timeline .timeline:nth-child(even) .timeline-content {
+	background: var(--color-primary);
+	border-radius: 15px 15px 15px 0;
+}
+@media screen and (max-width: 768px) {
+	.hero {
+		height: 45vh;
+		padding: 70px 20px 0px;
+	}
+	.Order-timeline .timeline {
+		width: 100%;
+		padding: 30px 0 0 30px !important;
+		margin: 0 0 20px;
+	}
+	.Order-timeline .timeline:before,
+	.Order-timeline .timeline:nth-child(even):before {
+		transform: rotate(-45deg);
+		bottom: auto;
+		top: 0;
+		right: auto;
+		left: 30px;
+	}
+	.Order-timeline .timeline:after,
+	.Order-timeline .timeline:nth-child(even):after {
+		bottom: auto;
+		top: 0;
+		right: auto;
+		left: 0;
+	}
+	.Order-timeline .timeline-content,
+	.Order-timeline .timeline:nth-child(even) .timeline-content {
+		border-radius: 0 15px 15px 15px;
+	}
+}

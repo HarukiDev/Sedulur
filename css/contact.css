@@ -42,21 +42,16 @@
 .contact-left-content h2,
 .contact-right-content h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 25px;
-}
-
-.contact-right-content h3 {
-    font-size: 2.2rem;
 }
 
 .contact-left-content p,
 .contact-right-content p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
     margin-bottom: 25px;
 }
 
@@ -76,14 +71,12 @@
 
 .form-field label {
     font-size: 0.9rem;
-    color: #353333;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 .form-field input[type="text"],
-.form-field input[type="email"],
-.form-field textarea {
+.form-field input[type="email"] {
     border: none;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
@@ -104,10 +97,21 @@
 }
 
 .form-field textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: #333;
     resize: vertical;
     min-height: 100px;
-    padding-top: 8px;
+    max-height: 200px; 
 }
+
 
 .send-whatsapp-button {
     border: 1px solid #333;
@@ -120,7 +124,7 @@
     transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
     align-self: flex-start;
     margin-top: 10px;
-    color: #333;
+    color: var(--color-primary);
 }
 
 .send-whatsapp-button:hover {
@@ -159,7 +163,7 @@
     .contact-right-content {
         max-width: 100%;
         min-width: unset;
-        padding: 0;
+        padding: 10px;
         text-align: center;
         align-items: center;
     }

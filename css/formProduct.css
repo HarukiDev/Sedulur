@@ -1,0 +1,348 @@
+header {
+	padding: 70px 20px 10px;
+	width: 100%;
+	text-align: center;
+}
+
+body {
+    position: relative !important;
+    background-color: #f9e39c !important;
+    overflow-x: hidden !important;
+}
+
+body::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: url("../img/72832455_fuyt1.jpg") repeat !important;
+    background-size: cover !important;
+    opacity: 0.7 !important;
+    z-index: -1 !important;
+}
+
+.header-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.unique-title {
+	background-color: #e5724b;
+	padding: 3px;
+	color: #fcedbe;
+	display: inline-block;
+	transform: rotate(-1deg);
+}
+
+.back-btn {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--color-primary);
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.back-btn:hover {
+	color: #c4846f;
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: 30vh;
+	max-height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 20px 0px;
+}
+
+.hero h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.8rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 25px;
+}
+
+.hero p {
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-bottom: 25px;
+	max-width: 80%;
+}
+
+.formProduct-hero {
+	max-width: 800px;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+	.hero {
+		height: 45vh;
+		padding: 70px 20px 0px;
+	}
+}
+
+
+.umkm-submission-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 70px;
+    align-items: center;
+    margin-top: 20px;
+    max-height: 1000px;
+}
+
+.umkm-submission-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    padding: 70px;
+    max-width: 1400px;
+}
+
+.umkm-submission-left-content {
+    min-width: 300px;
+    max-width: calc(70% - 20px);
+}
+
+.umkm-submission-right-content {
+    min-width: 200px;
+    max-width: calc(30% - 20px);
+    border: 2px solid var(--color-primary);
+    padding: 10px;
+}
+
+.umkm-submission-left-content,
+.umkm-submission-right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.umkm-submission-left-content h2,
+.umkm-submission-right-content h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: var(--color-primary); 
+}
+
+.umkm-submission-left-content p,
+.umkm-submission-right-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.umkm-submission-left-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.form-field input[type="text"],
+.form-field input[type="tel"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: #333;
+}
+
+.form-field textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: #333;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px; 
+}
+
+.form-field select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    color: #333;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+.form-field select option {
+    background-color: white;
+    color: #333; 
+}
+
+.form-field select option:hover,
+.form-field select option:checked {
+    color: #F4A261; 
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-bottom-color: #F4A261;
+    box-shadow: none;
+    outline: none;
+}
+
+.send-whatsapp-button {
+    border: 1px solid #333;
+    background-color: transparent;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+    align-self: flex-start;
+    margin-top: 10px;
+    color: var(--color-primary);
+}
+
+.send-whatsapp-button:hover {
+    background-color: #F4A261;
+    color: white;
+    transform: translateY(-2px);
+    border-color: #F4A261;
+}
+
+.product-submission-link {
+    color: #F4A261;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #F4A261;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.product-submission-link:hover {
+    color: #e09450;
+    border-color: #e09450;
+}
+
+@media (max-width: 991px) {
+    .umkm-submission-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 60px;
+        gap: 60px;
+    }
+
+    .umkm-submission-left-content,
+    .umkm-submission-right-content {
+        max-width: 100%;
+        min-width: unset;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .umkm-submission-left-content h2,
+    .umkm-submission-right-content h3 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .umkm-submission-left-content p,
+    .umkm-submission-right-content p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .send-whatsapp-button {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
+    }
+
+    .product-submission-link {
+        font-size: 1rem;
+        padding-bottom: 1px;
+        border-bottom-width: 1px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .umkm-submission-container {
+        padding: 25px 70px;
+        gap: 70px;
+    }
+
+    .umkm-submission-left-content h2,
+    .umkm-submission-right-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .umkm-submission-left-content p,
+    .umkm-submission-right-content p {
+        font-size: 0.9rem;
+    }
+    .umkm-submission-section {
+        height: auto;
+        min-height: 100vh;
+        max-height: unset;
+    }
+}
